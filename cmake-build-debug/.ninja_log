@@ -83,3 +83,11 @@
 121	199	7023206370132921	LABA14.exe	3a63468468944248
 2	62	7023206484451821	CMakeFiles/LABA14.dir/main.c.obj	414ad21084fd5864
 63	142	7023206485230014	LABA14.exe	3a63468468944248
+3	83	7023294742638675	CMakeFiles/LABA14.dir/main.c.obj	414ad21084fd5864
+7	88	7023294742688543	mother/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj	7c0b9e363bc7a6f8
+88	155	7023294743376702	mother/data_structures/libdata_structures.a	b89c72255659c7b3
+155	243	7023294744234405	LABA14.exe	3a63468468944248
+2	71	7023301902059442	CMakeFiles/LABA14.dir/main.c.obj	414ad21084fd5864
+6	77	7023301902119263	mother/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj	7c0b9e363bc7a6f8
+77	138	7023301902737612	mother/data_structures/libdata_structures.a	b89c72255659c7b3
+138	221	7023301903535768	LABA14.exe	3a63468468944248

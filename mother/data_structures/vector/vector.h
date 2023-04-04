@@ -47,4 +47,13 @@ void pushBack(Vector *v, int x);
 // Удаляет последний элемент из вектора v.
 void popBack(Vector *v);
 
+// Возвращает указатель на index-ый элемент вектора v.
+int *atVector(Vector *v, size_t index);
+
+// Возвращает указатель на последний элемент вектора v.
+int *back(Vector *v);
+
+// Возвращает указатель на нулевой элемент вектора v.
+int *front(Vector *v);
+
 #endif //MOTHER_VECTOR_H

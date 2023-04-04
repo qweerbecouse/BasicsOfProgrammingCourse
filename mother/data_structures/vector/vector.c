@@ -69,20 +69,47 @@ int getVectorValue(Vector *v, size_t i) {
 }
 
 void pushBack(Vector *v, int x) {
-    if (v->size == v->capacity) {
+    if (isFull(v)) {
         if (v->capacity == 0) {
             reserve(v, 1);
         } else {
             reserve(v, v->capacity * 2);
         }
     }
-    v->data[v->size++] = x;
+    getVectorValue(v, v->size++) = x;
 }
 
 void popBack(Vector *v) {
-    if (v->size == 0) {
+    if (isEmpty(v)) {
         fprintf(stderr, "error: attempting to pop back from empty vector\n");
         exit(1);
     }
     v->size--;
+}
+
+int *atVector(Vector *v, size_t index) {
+    if (index >= v->size) {
+        fprintf(stderr, "indexError: a[%zu] is not exists\n", index);
+        exit(1);
+    }
+
+    return &(v->data[index]);
+}
+
+int *back(Vector *v) {
+    if (isEmpty(v)) {
+        fprintf(stderr, "error: vector is empty\n");
+        exit(1);
+    }
+
+    return &(v->data[v->size - 1]);
+}
+
+int *front(Vector *v) {
+    if (isEmpty(v)) {
+        fprintf(stderr, "error: vector is empty\n");
+        exit(1);
+    }
+
+    return &(v->data[0]);
 }
