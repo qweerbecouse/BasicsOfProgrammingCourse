@@ -76,7 +76,7 @@ void pushBack(Vector *v, int x) {
             reserve(v, v->capacity * 2);
         }
     }
-    getVectorValue(v, v->size++) = x;
+    v->data[v->size++] = x;
 }
 
 void popBack(Vector *v) {
