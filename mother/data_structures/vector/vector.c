@@ -1,11 +1,15 @@
 #include "vector.h"
 
-Vector createVector(size_t n) {
-    Vector v;
-    v.data = NULL;
-    v.size = 0;
-    v.capacity = 0;
+Vector getEmptyVector() {
+    return (Vector) {
+            NULL,
+            0,
+            0
+    };
+}
 
+Vector createVector(size_t n) {
+    Vector v = getEmptyVector();
     if (n > 0) {
         v.data = (int *) malloc(sizeof(int) * n);
         if (v.data == NULL) {
@@ -48,5 +52,6 @@ void shrinkToFit(Vector *v) {
 
 void deleteVector(Vector *v) {
     free(v->data);
-    free(v);
+    v->size = 0;
+    v->capacity = 0;
 }

@@ -13,6 +13,9 @@ typedef struct Vector {
     size_t capacity; // количество элементов в массиве под хранение элементов вектора
 } Vector;
 
+//возвращает пустой вектор
+Vector getEmptyVector();
+
 // Возвращает структуру-дескриптор вектор из n значений.
 Vector createVector(size_t n);
 
