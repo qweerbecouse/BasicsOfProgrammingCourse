@@ -58,3 +58,52 @@ void deleteVectorV(VectorVoid *v) {
     v->capacity = 0;
     v->baseTypeSize = 0;
 }
+
+bool isEmptyV(VectorVoid *v) {
+    return v->size == 0;
+}
+
+bool isFullV(VectorVoid *v) {
+    return v->size == v->capacity;
+}
+
+void getVectorValueV(VectorVoid *v, size_t index, void *destination) {
+    char *source = (char *) v->data + index * v->baseTypeSize;
+    memcpy(destination, source, v->baseTypeSize);
+}
+
+void setVectorValueV(VectorVoid *v, size_t index, void *source) {
+    char *destination = (char *) v->data + index * v->baseTypeSize;
+    memcpy(destination, source, v->baseTypeSize);
+
+    v->size++;
+    if (v->size > v->capacity) {
+        if (v->capacity == 0) {
+            reserveV(v, 1);
+        } else {
+            reserveV(v, v->capacity * 2);
+        }
+    }
+}
+
+void pushBackV(VectorVoid *v, void *source) {
+    if (isFullV(v)) {
+        if (v->capacity == 0) {
+            reserveV(v, 1);
+        } else {
+            reserveV(v, v->capacity * 2);
+        }
+    }
+    char *destination = (char *) v->data + v->size * v->baseTypeSize;
+    memcpy(destination, source, v->baseTypeSize);
+
+    v->size++;
+}
+
+void popBackV(VectorVoid *v) {
+    if (isEmptyV(v)) {
+        fprintf(stderr, "error: attempting to pop back from empty vector\n");
+        exit(1);
+    }
+    v->size--;
+}
