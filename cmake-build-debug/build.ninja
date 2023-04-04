@@ -150,6 +150,12 @@ build mother/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj:
   OBJECT_DIR = mother\data_structures\CMakeFiles\data_structures.dir
   OBJECT_FILE_DIR = mother\data_structures\CMakeFiles\data_structures.dir\vector
 
+build mother/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj: C_COMPILER__data_structures_Debug C$:/Users/kiril/CLionProjects/LABA14/mother/data_structures/vector/vectorVoid.c || cmake_object_order_depends_target_data_structures
+  DEP_FILE = mother\data_structures\CMakeFiles\data_structures.dir\vector\vectorVoid.c.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu11
+  OBJECT_DIR = mother\data_structures\CMakeFiles\data_structures.dir
+  OBJECT_FILE_DIR = mother\data_structures\CMakeFiles\data_structures.dir\vector
+
 build mother/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj: C_COMPILER__data_structures_Debug C$:/Users/kiril/CLionProjects/LABA14/mother/data_structures/matrix/matrix.c || cmake_object_order_depends_target_data_structures
   DEP_FILE = mother\data_structures\CMakeFiles\data_structures.dir\matrix\matrix.c.obj.d
   FLAGS = -g -fdiagnostics-color=always -std=gnu11
@@ -164,7 +170,7 @@ build mother/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj:
 #############################################
 # Link the static library mother\data_structures\libdata_structures.a
 
-build mother/data_structures/libdata_structures.a: C_STATIC_LIBRARY_LINKER__data_structures_Debug mother/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj mother/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj mother/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj
+build mother/data_structures/libdata_structures.a: C_STATIC_LIBRARY_LINKER__data_structures_Debug mother/data_structures/CMakeFiles/data_structures.dir/bitset/bitset.c.obj mother/data_structures/CMakeFiles/data_structures.dir/vector/vector.c.obj mother/data_structures/CMakeFiles/data_structures.dir/vector/vectorVoid.c.obj mother/data_structures/CMakeFiles/data_structures.dir/matrix/matrix.c.obj
   LANGUAGE_COMPILE_FLAGS = -g
   OBJECT_DIR = mother\data_structures\CMakeFiles\data_structures.dir
   POST_BUILD = cd .
