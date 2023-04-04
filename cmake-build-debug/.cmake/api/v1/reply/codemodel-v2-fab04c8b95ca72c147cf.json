@@ -1,0 +1,129 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "mother",
+					"childIndexes" : 
+					[
+						2,
+						3
+					],
+					"jsonFile" : "directory-mother-Debug-d028f9ca7aaf02060f07.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "mother"
+				},
+				{
+					"build" : "mother/data_structures",
+					"jsonFile" : "directory-mother.data_structures-Debug-fa563d494e939855f633.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "mother/data_structures",
+					"targetIndexes" : 
+					[
+						2
+					]
+				},
+				{
+					"build" : "mother/algorithms",
+					"jsonFile" : "directory-mother.algorithms-Debug-fd16a7393acbe418d856.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.25"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "mother/algorithms",
+					"targetIndexes" : 
+					[
+						1
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					],
+					"name" : "LABA14",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "LABA14::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-LABA14-Debug-5bd47bca2044637c1421.json",
+					"name" : "LABA14",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "algorithms::@abd3d504df21b0597125",
+					"jsonFile" : "target-algorithms-Debug-c7cf54157b0a565f0c28.json",
+					"name" : "algorithms",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "data_structures::@1e5decaebc994eccc134",
+					"jsonFile" : "target-data_structures-Debug-be38a76df70158e80ed9.json",
+					"name" : "data_structures",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/kiril/CLionProjects/LABA14/cmake-build-debug",
+		"source" : "C:/Users/kiril/CLionProjects/LABA14"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}

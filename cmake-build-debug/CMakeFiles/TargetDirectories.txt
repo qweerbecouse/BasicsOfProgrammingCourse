@@ -1,3 +1,11 @@
 C:/Users/kiril/CLionProjects/LABA14/cmake-build-debug/CMakeFiles/LABA14.dir
 C:/Users/kiril/CLionProjects/LABA14/cmake-build-debug/CMakeFiles/edit_cache.dir
 C:/Users/kiril/CLionProjects/LABA14/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/kiril/CLionProjects/LABA14/cmake-build-debug/mother/CMakeFiles/edit_cache.dir
+C:/Users/kiril/CLionProjects/LABA14/cmake-build-debug/mother/CMakeFiles/rebuild_cache.dir
+C:/Users/kiril/CLionProjects/LABA14/cmake-build-debug/mother/data_structures/CMakeFiles/data_structures.dir
+C:/Users/kiril/CLionProjects/LABA14/cmake-build-debug/mother/data_structures/CMakeFiles/edit_cache.dir
+C:/Users/kiril/CLionProjects/LABA14/cmake-build-debug/mother/data_structures/CMakeFiles/rebuild_cache.dir
+C:/Users/kiril/CLionProjects/LABA14/cmake-build-debug/mother/algorithms/CMakeFiles/algorithms.dir
+C:/Users/kiril/CLionProjects/LABA14/cmake-build-debug/mother/algorithms/CMakeFiles/edit_cache.dir
+C:/Users/kiril/CLionProjects/LABA14/cmake-build-debug/mother/algorithms/CMakeFiles/rebuild_cache.dir
