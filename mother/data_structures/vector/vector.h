@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <assert.h>
+#include <stdbool.h>
 
 // Структура вектора.
 typedef struct Vector {
@@ -30,5 +31,20 @@ void shrinkToFit(Vector *v);
 
 // Освобождает память, выделенную вектору v.
 void deleteVector(Vector *v);
+
+// Возвращает значение "истина", если вектор v пустой, иначе - "ложь".
+bool isEmpty(Vector *v);
+
+// Возвращает значение "истина", если вектор v полный, иначе - "ложь".
+bool isFull(Vector *v);
+
+// Возвращает i-ый элемент вектора v.
+int getVectorValue(Vector *v, size_t i);
+
+// Добавляет элемент x в конец вектора v.
+void pushBack(Vector *v, int x);
+
+// Удаляет последний элемент из вектора v.
+void popBack(Vector *v);
 
 #endif //MOTHER_VECTOR_H
