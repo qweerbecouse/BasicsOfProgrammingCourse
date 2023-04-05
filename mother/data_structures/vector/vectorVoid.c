@@ -54,6 +54,7 @@ void shrinkToFitV(VectorVoid *v) {
 
 void deleteVectorV(VectorVoid *v) {
     free(v->data);
+    v->data = NULL;
     v->size = 0;
     v->capacity = 0;
     v->baseTypeSize = 0;

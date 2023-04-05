@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <stdbool.h>
 #include <memory.h>
+#include <assert.h>
 
 // Структура произвольного вектора.
 typedef struct VectorVoid {
@@ -26,7 +27,7 @@ void reserveV(VectorVoid *v, size_t newCapacity);
 // Удаляет элементы из вектора v, но не освобождает выделенную память.
 void clearV(VectorVoid *v);
 
-// Освобождает память, выделенную под неиспользуемые элементы вектора v.
+// Освобождает память выделенную под неиспользуемые элементы вектора v.
 void shrinkToFitV(VectorVoid *v);
 
 // Освобождает память, выделенную вектору v.
